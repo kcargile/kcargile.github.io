@@ -24,6 +24,15 @@ a:hover {
 	text-underline-offset: 0.15em;
 }
 
+footer {
+	margin-top: 3em;
+}
+
+footer .copyright {
+	font-size: 16px;
+	padding-left: 30px;
+}
+
 h1 {
 	font-weight: 600;
 	font-size: 133%;
@@ -34,37 +43,6 @@ h2 {
 	font-weight: 600;
 	font-size: 133%;
 	margin-top: 1.5em;
-}
-
-footer {
-	margin-top: 3em;
-}
-
-footer .copyright {
-	font-size: 16px;
-	padding-left: 30px;
-}
-
-header {
-	font-style: normal;
-	font-weight: 400;
-	font-size: 2.4em;
-	max-width: 940px;
-	width: 100%;
-}
-
-header .intro {
-	line-height: 1.2;
-	margin-right: 100px;
-	padding: 90px 90px 30px 90px;
-}
-
-header .intro strong {
-	font-weight: 700;
-	background-color: #00b3a0;
-	color: #ff5000;
-	border-radius: 3px;
-	padding: 0 0.1em 0.1em;
 }
 
 main {
@@ -120,13 +98,29 @@ ul.labeled li::marker {
 	display: none;
 }
 
-@media only screen and (max-width: 550px) {
-	header .intro {
-		padding-top: 50px;
-		margin-right: 0;
-		padding-right: calc(3px + (90 - 3) * ((100vw - 450px) / (550 - 450)));
-	}
+.header {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 2.4em;
+	max-width: 940px;
+	width: 100%;
+}
 
+.header .intro {
+	line-height: 1.2;
+	margin-right: 100px;
+	padding: 90px 90px 30px 90px;
+}
+
+.header .intro strong {
+	font-weight: 700;
+	background-color: #00b3a0;
+	color: #ff5000;
+	border-radius: 3px;
+	padding: 0 0.1em 0.1em;
+}
+
+@media only screen and (max-width: 550px) {
     .content {
 		margin-right: 0;
 		padding-right: calc(3px + (90 - 3) * ((100vw - 450px) / (550 - 450)));
@@ -144,16 +138,22 @@ ul.labeled li::marker {
 	.flag {
 		display: none;
 	}
+
+    .header .intro {
+		padding-top: 50px;
+		margin-right: 0;
+		padding-right: calc(3px + (90 - 3) * ((100vw - 450px) / (550 - 450)));
+	}
 }
 
 @media only screen and (max-width: 1200px) {
-	header .intro {
+    .content {
 		padding-right: 90px;
 		padding-left: calc(3px + (90 - 3) * ((100vw - 300px) / (1200 - 300)));
 		margin-right: calc(0px + (100 - 0) * ((100vw - 550px) / (1200 - 550)));
 	}
 
-    .content {
+    .header .intro {
 		padding-right: 90px;
 		padding-left: calc(3px + (90 - 3) * ((100vw - 300px) / (1200 - 300)));
 		margin-right: calc(0px + (100 - 0) * ((100vw - 550px) / (1200 - 550)));
