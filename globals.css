@@ -1,0 +1,161 @@
+html {
+	font-family: "Ringside Narrow A", "Ringside Narrow B";
+}
+
+body {
+	background-color: #020202;
+	color: #e8e8e8;
+	font-size: 10px;
+	font-style: normal;
+	margin: 0;
+	min-width: 300px;
+	padding: 0;
+}
+
+a,
+a:link,
+a:visited,
+a:active,
+a:focus,
+a:hover {
+	color: #e8e8e8;
+	text-decoration-color: rgba(0, 179, 160, 0.33);
+	text-decoration-thickness: 0.09em;
+	text-underline-offset: 0.15em;
+}
+
+h1 {
+	font-weight: 600;
+	font-size: 133%;
+	margin-top: 1.5em;
+}
+
+h2 {
+	font-weight: 600;
+	font-size: 133%;
+	margin-top: 1.5em;
+}
+
+footer {
+	margin-top: 3em;
+}
+
+footer .copyright {
+	font-size: 16px;
+	padding-left: 30px;
+}
+
+header {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 2.4em;
+	max-width: 940px;
+	width: 100%;
+}
+
+header .intro {
+	line-height: 1.2;
+	margin-right: 100px;
+	padding: 90px 90px 30px 90px;
+}
+
+header .intro strong {
+	font-weight: 700;
+	background-color: #00b3a0;
+	color: #ff5000;
+	border-radius: 3px;
+	padding: 0 0.1em 0.1em;
+}
+
+main {
+	font-family: "Ringside Regular A", "Ringside Regular B";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.9em;
+	line-height: 1.2;
+	max-width: 940px;
+	width: 100%;
+}
+
+ul.labeled {
+	font-size: 100%;
+}
+
+ul.labeled li {
+	list-style: none;
+	margin: 0.66em 0 0.66em 1.95em;
+	font-size: 100%;
+}
+
+ul.labeled li::marker {
+	font-size: 93%;
+	letter-spacing: 0.03em;
+}
+
+.content {
+	margin-right: 100px;
+	padding: 30px 90px 1em 90px;
+}
+
+.changelog {
+	margin-top: 0;
+}
+
+.flagContainer {
+	display: block;
+	left: -16px;
+	margin: 30px 0;
+	overflow: hidden;
+	position: relative;
+	width: 109%;
+}
+
+.flag {
+	max-width: 1900px;
+	min-width: 1570px;
+	position: relative;
+}
+
+.flagStack {
+	display: none;
+}
+
+@media only screen and (max-width: 550px) {
+	header .intro {
+		padding-top: 50px;
+		margin-right: 0;
+		padding-right: calc(3px + (90 - 3) * ((100vw - 450px) / (550 - 450)));
+	}
+
+    .content {
+		margin-right: 0;
+		padding-right: calc(3px + (90 - 3) * ((100vw - 450px) / (550 - 450)));
+	}
+
+    .flagStack {
+		display: block;
+		position: relative;
+		left: -8px;
+		width: calc(460px + (785 - 460) * ((100vw - 300px) / (550 - 300)));
+		min-width: 460px;
+		margin: 10px 0;
+	}
+
+	.flag {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	header .intro {
+		padding-right: 90px;
+		padding-left: calc(3px + (90 - 3) * ((100vw - 300px) / (1200 - 300)));
+		margin-right: calc(0px + (100 - 0) * ((100vw - 550px) / (1200 - 550)));
+	}
+
+    .content {
+		padding-right: 90px;
+		padding-left: calc(3px + (90 - 3) * ((100vw - 300px) / (1200 - 300)));
+		margin-right: calc(0px + (100 - 0) * ((100vw - 550px) / (1200 - 550)));
+	}
+}
